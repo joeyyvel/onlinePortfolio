@@ -1,0 +1,105 @@
+
+/*----------------- Sample Projects media query -------------*/
+
+/*  Extra small devices(phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #section--1{
+      height: 100vh;
+      
+    }
+
+     #section--2{
+        background-color: red;
+     }
+     #bankPhoto, #gamePhoto, #hotelPhoto, #schoolPhoto{
+      width: 60%;
+      height: 45%;
+    }
+
+    .footerOne{
+      display: none;
+    }
+    .footerTwo{
+      width: 100%;
+      padding: 10px;
+      margin: 5px;
+      display: flex;
+      text-align: center;
+      justify-content: center;      
+    }    
+
+    .footerThree{
+      background-color: black;
+           
+    }
+    .footerFour{
+      background-color: blue;
+      
+    }
+    .footerRight > div{
+      height: 48%;
+      margin: 5px;
+    }       
+}
+
+/*  Small Devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #section--1{
+      height: 100vh;
+    }
+
+    #section--2{
+        background-color: green;
+    }
+    #bankPhoto, #gamePhoto, #hotelPhoto, #schoolPhoto{
+      width: 60%;
+      height: 45%;
+    }
+}
+
+/*  Medium Devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+  #section--1{
+    height: 100vh;
+  }
+    #section--2{
+        background-color: blue;
+    }
+    #bankPhoto, #gamePhoto, #hotelPhoto, #schoolPhoto{
+      width: 60%;
+      height: 45%;
+    }
+}
+
+/*------ Large devices (laptops / desktops, 992px and up)-------- */
+@media only screen and (min-width: 992px) {
+  #section--1{
+    height: 100vh;
+  }
+    #section--2{
+        background-color: orange;
+    }  
+    
+    #bankPhoto, #gamePhoto, #hotelPhoto,
+    #schoolPhoto{
+      width: 60%;
+      height: 45%;
+    }    
+}
+/*------ Extra large devices (large laptops and desktops, 1200px and up)-----*/
+@media only screen and (min-width : 1200px) {
+  #section--1{
+    height: 100vh;
+  }
+      #section--2{
+        background-color: blue;        
+      }     
+
+
+      #appPara{
+        font-size: 15px;
+      }
+    
+}
+
+    

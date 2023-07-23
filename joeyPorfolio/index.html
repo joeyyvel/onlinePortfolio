@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Portfolio</title>
+  <script src="https://kit.fontawesome.com/8e493203fb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/styleSection600px.css">
+  
+
+</head>
+<body>
+  <nav class="nav">
+     <ul class="nav__links">
+        <li class="nav__link"><a href="#section--1" class="nav__item">Home</a></li>
+        <li class="nav__link"><a href="#section--2" class="nav__item">My Projects</a></li>
+        <li class="nav__link"><a href="#section--3" class="nav__item">About Me</a></li>
+        <li class="nav__link"><a href="#section--4" class="nav__item">Contact Me</a></li>        
+     </ul>
+  </nav>
+
+
+        <!---- Home ---->
+  <section class="section" id="section--1"> Main Page
+
+    <div class="JoeySection">
+     <div class="myPhoto">
+      <img src="/image/joey.jpg" alt="" id="joeyPhoto">
+     </div>
+    
+     <div class="parentIconLine">
+    <div class="iconLineOne">
+      <a href="https:www.github.com" target="_blank" style="color: white;"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="iconLineOne">
+      <a href="https:www.facebook.com" target="_blank" style="color: azure;"><i class="fab fa-facebook"></i></a>
+    </div>      
+    <div class="iconLineOne">
+      <a href="https:www.instagram.com" target="_blank" style="color: azure"><i class="fab fa-instagram"></i></a>
+    </div>  
+    <div class="iconLineOne">
+      <a href="https:www.linkedin.com" target="_blank" style="color: azure;"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="iconLineOne">
+      <a href="https:www.twitter.com" target="_blank" style="color: azure"><i class="fab fa-twitter"></i></a>
+    </div>
+     <div class="iconLineOne">
+      <a href="https:www.youtube.com" target="_blank" style="color: azure"><i class="fab fa-youtube"></i></a>
+     </div>
+   </div>  
+
+     <div class="paraIntro">
+     <div class="myIntro one"> 
+     <h1>
+       Hi!
+         <!--- Welcome Paragraph --->
+         <span class="paraWelcome">I Am</span>
+         <br>
+         <div class="paraWelcome" id="drop-name">
+          <div class="j">J</div>
+          <div class="o">o</div>
+          <div class="e">e</div>
+          <div class="y">y</div>
+          <div class="space">' '</div>
+          <div class="s">S</div>
+          <div class="a">a</div>
+          <div class="y2">y</div>
+          <div class="a2">a</div>
+          <div class="d">d</div>
+          <div class="i">i</div>
+         </div>
+     </h1>
+       <h4 class="paraIntroduction">you can call me Yeoj, i am a Web Developer.</h4>
+    </div>
+  </div>
+</div>
+  </section>
+
+        <!--- My Projects --->
+        <div class="sectionTitle">My sample projects slide show</div>
+
+  <section class="section" id="section--2">     
+         <!----slide container---->
+      <div class="projects--slideContainer">
+
+           
+          <!---- Bank Area ---->       
+        <div class="mySlides bank__Photo"> <h3 class="appTitle">Bank</h3> 
+          <div class="bankPhoto">
+              <img src="/image/joeyBank.png" alt="bankPhoto" id="bankPhoto">
+          </div>
+          <p id="appPara">Mini bank App simply lets you withdraw, transfer, inquire,
+            check transaction history and change your personal pin on the machine.
+          </p>             
+        </div>  
+
+          <!---- Game Area ----> 
+        <div class="mySlides game__Photo"><h3 class="appTitle">Game</h3>
+          <div class="gamePhoto">
+             <img src="/image/gamePhoto.png" alt="gamePhoto" id="gamePhoto">
+          </div>
+           <p id="appPara">Dice game, a simple project that lets two players roll the Dice
+              consecutively and sum up the total to reach 100 points and win.
+           </p> 
+        </div> 
+
+         <!---- Hotel Area ----> 
+        <div class="mySlides hotel__Photo"><h3 class="appTitle">Hotel</h3>
+          <div class="hotelPhoto">
+            <img src="/image/hotel.png" alt="hotelPhoto" id="hotelPhoto">
+          </div>
+            <p id="appPara">Find the perfect place to stay at an amazing price.
+              lets property owners rent out their spaces to travelers looking for 
+              a place to stay.
+            </p>
+        </div> 
+
+
+        <!---- School Area ----> 
+        <div class="mySlides school__Photo"><h3 class="appTitle">School</h3>
+          <div class="schoolPhoto">
+             <img src="/image/school.png" alt="schoolPhoto" id="schoolPhoto">
+          </div>
+           <p id="appPara">School Registration App lets you register and be a member
+               of spongebob community circle. stil ongoing development...
+           </p>
+        </div>  
+      
+
+       
+        <div class="center" style="width: 100%;"> 
+          <div class="arrowParent"> 
+         <button class="arrow leftArrow "  onclick="plusDivs(-1)">&#10094;</button>
+         <button class="arrow rightArrow"  onclick="plusDivs(1)">&#10095;</button>
+          </div>
+
+      </div>
+    
+
+    </div>
+
+  </section>
+
+
+            <!--- My skills / About Me--->
+            <div class="sectionTitle">About Me</div>
+  <section class="section" id="section--3">
+     
+     <div class="gallery-container">
+      <div class="gallery-divOne"> 
+      
+   <div class="cardOne" style="background-color: blueviolet;"> 
+        <div class="mySkills"> 
+              <h3>My skills</h3>
+        <p>* HTML / CSS / Javascript, Knowledge in BootStrap5, Wordpress and ReactJS. </p>       
+        <p>* Knowledge in Java Core Programming, JavaSwing and JavaFX, C & C++.</p>
+        <p>* Knowlege in Linux System Administration.</p>
+        <p>* Well acquainted with PC Compatibles (assembling, installation, problem diagnostics and
+             troubleshooting) Hard disks, CPU's, Motherboards, expansion cards, printers, monitors,
+             removables drives, hubs and switches</p>      
+      </div> 
+    </div>
+    
+     <div class="cardTwo" style="background-color: rgb(92, 40, 40);">  
+      <div class="gallery-experience">
+              <h3>Work Experience</h3>
+        <p>* Computer technician <br>
+             <em class="workPlace">Al-Rashid Computershop, Zamboanga City.</em></p>
+        <p> * Sales Administration Clerk <br>
+            * Computer Operator <br>
+            * Area Sales Supervisor <br>
+             <em class="workPlace">Triumph International (Philippines) Inc. <br>
+            3/f Alco Bldg. Sen. Gil Puyat Avenue, Makati City Phil.</em>
+        </p>  
+        <p> * Technical Support (Dish Network) <br>
+             <em class="workPlace">SPI Global formerly ePLDT Ventus Systems Inc. Mandaluyung City</em>
+        </p>  
+        <p>* Technical Support (DELL Computers) <br>
+          <em class="workPlace"> Stream Global Services, Eastwood City, Quezon City.</em>
+        </p>
+        <p>* Computer Operator / EDP staff <br>
+          <em class="workPlace">Bay't Al-Ansari , Dammam Kingdom of Saudi Arabia</em>
+        </p>
+        <p>* Documentation / Operation Staff / CHE Operator <br>
+          <em class="workPlace">Abu Dhabi Terminals, Khalifa Port, United Arab Emirates</em>
+        </p>
+      </div>
+    </div>
+      </div>
+
+    
+
+        <div class="gallery-divTwo"> 
+    
+          <div class="cardThree" style="background-color: darkgoldenrod; margin-bottom: 100px;"> 
+          <div class="aboutMe"> 
+              <h3>Academic Education</h3>
+         <p> * Completed the five year course of Bachelor of Science in Computer Engineering
+            from Mindanao Electronics Institute Inc. Zamboanga City (Year graduated 1999).
+         </p>
+         </div>
+         </div>
+       
+    
+        <div class="cardFour" style="background-color: rgb(114, 160, 69);"> 
+        <div class="divTraining"> 
+              <h3>I.T Trainings and Seminars Attended</h3>
+         <p> * Linux System Administration 101 and 102 <br>
+          <em class="school"> -University of the Philippines information technology training center diliman, Quezon City.</em>   
+         </p>
+
+         <p> * Professional certification in information technology, computer application programming 
+          Java Programming. <br> <em class="school"> -Informatics Computer Institutes</em>
+         </p>
+
+         <p> * Computer-Aided Drafting & Design (CADD) course -AutoCAD R14- 
+          <br> <em class="school"> -CADWays Engineering and Computer Technologies</em>
+         </p>
+
+         <p> * PC Networking and Administration
+          <br> <em class="school"> -Computer Networking Career & Training Center</em>
+         </p>
+
+         <p> * Computer Technician
+          <br> <em class="school"> -St. Peter Technical Training Center Corp.</em>
+         </p>
+        </div>    
+
+      </div>
+
+
+
+     </div>
+
+    </div> 
+     
+  </section>
+
+          <!---- Footer Section ---->
+          <div class="sectionTitle">Contact Me</div>
+  <section class="section" id="section--4">
+          <!---Footer Header-->
+   <div class="footerHead"> 
+       
+  
+   </div>
+
+           <!--footer Mid-->
+    <div class="footerDiv">
+           <!--footer left side-->
+      <div class="footerLeft">
+      <div class="footerOne">
+        <img src="/image/myWeb.png" alt="webLogo" id="webLogo">
+      </div>
+
+      <div class="footerTwo">            
+           <div class="footerNav">
+             <h3 class="footBrowser">Browser</h3>
+            <br>
+              <ul class="nav__footer__links">
+                <li class="nav__footer__link"><a href="#section--1" class="footer__link">Home</a></li>
+                <li class="nav__footer__link"><a href="#section--2" class="footer__link">My Projects</a></li>
+                <li class="nav__footer__link"><a href="#section--3" class="footer__link">About Me</a></li>
+                <li class="nav__footer__link"><a href="#section--4" class="footer__link">Contact Me</a></li>
+              </ul>
+            </div>  
+          
+        </div>
+
+      </div>
+         <!--footer right side-->
+      <div class="footerRight"> 
+
+      <div class="footerThree">
+        <table>
+           <tr> 
+           <th>Email:</th> <td>joeyabaosayadi@gmail.com</td>
+           </tr>
+           <tr> 
+           <th>Phone:</th> <td>(+63) 945 586 7785</td>    
+           </tr>
+           <tr>
+            <th>Address:</th> <td>Block 8, Lot 6. BRIA Homes, Barrio Road
+                                 Tayuman. Binangonan Rizal Philippines.</td>
+           </tr>
+        </table>
+
+      </div>
+
+      <div class="footerFour">Email Sign-up form
+        <div>
+          <p>Body of Email Sign-up form</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="footerBottom">
+      <div class="footbottom">  
+        
+      <p>Copyright &copy: 2023 joeyabaosayadi</p>
+      </div> 
+    </div>
+
+
+  </section>
+ 
+
+
+<script src="joey.js"></script>
+
+</body>
+</html>

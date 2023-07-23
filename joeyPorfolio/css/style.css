@@ -1,0 +1,577 @@
+:root{
+    --myColor: rgb(7, 7, 54);
+    --myBackGround: rgb(45, 48, 46);
+    --myAnotherColor: rgb(31, 28, 28);
+    --nav-height: 50px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;    
+       
+}
+body{
+    background: gray;
+}
+
+
+ .nav{    
+    position: -webkit-sticky;
+    position: fixed;       
+    top: 0;
+    background-color: rgb(36, 39, 36);
+    height: var(--nav-height);
+    z-index: 5;   
+    width: 100%; 
+    opacity: 0.7;
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.nav__links{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center; 
+            
+}
+
+.nav__item{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;    
+    color: aliceblue;
+    padding: 5px 12px;
+}
+
+.nav__item:hover{
+    background-color: rgb(95, 95, 70);
+    border-radius: 5px;
+    
+        
+}
+
+/*----------------------- hidding the nav bars -------------- */
+.nav--hidden{
+    transform: translateY(calc(-1 * var(--nav-height)));
+}
+
+/*------------------------ All Section Height------------------*/
+/*
+.section{  
+  
+   }     */
+ 
+.sectionTitle{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#section--1{
+    background-image: url(/image/spidy.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+    height: 100vh;    
+}
+
+/*--------------------------- Home Page / Section one -----------------------*/
+.parentIconLine{
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;    
+
+}
+
+.myPhoto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+/*
+.iconLineOne{
+   
+}   */
+
+#joeyPhoto{
+    margin-top: 40px;
+    height: 250px;
+    border-radius: 50%;    
+    opacity: 0.7;
+}
+
+.paraIntro{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+/*------------- my name drops -----------*/
+
+.myIntro.one{       
+    line-height: 3rem;
+    position: absolute;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+    color: white;
+    opacity: 0.8; 
+       
+}
+
+#drop-name{
+    display: flex;
+    color: aliceblue;
+    font-size: 3.5rem;
+    margin: .5rem;
+    justify-content: center;
+    
+}
+
+/* name animation */
+.j{
+    opacity: 0;
+    animation: drop 6s linear forwards;
+    color: #31e0e0;    
+}
+.o{
+    opacity: 0;
+    animation: drop 6s linear forwards 0.2s;
+    color: #99ffff;    
+}
+.e{
+    opacity: 0;
+    animation: drop 6s linear forwards 0.4s;
+    color: #c5ab14;    
+}
+.y{
+    opacity: 0;
+    animation: drop 6s linear forwards 0.6s;
+    color: #ce305f;
+}
+.space{
+    opacity: 0;
+}
+.s{
+    opacity: 0;
+    animation: drop 6s linear forwards 0.8s;
+    color: aquamarine;
+}
+.a{
+    opacity: 0;
+    animation: drop 6s linear forwards 1s;
+    color: rgb(145, 97, 185);
+}
+.y2{
+    opacity: 0;
+    animation: drop 6s linear forwards 1.2s;
+    color: rgb(70, 70, 243);
+}
+.a2{
+    opacity: 0;
+    animation: drop 6s linear forwards 1.4s;
+    color: rgb(194, 207, 9);
+}
+.d{
+    opacity: 0;
+    animation: drop 6s linear forwards 1.6s;
+    color: chartreuse;
+}
+.i{
+    opacity: 0;
+    animation: drop 6s linear forwards 1.8s;
+    color: darkorange;
+}
+
+/*----- animation infinite --------*/
+.j, .o, .e, .y, .s, .a, .y2, .a2, .d, .i{
+    animation-iteration-count: infinite;
+}
+
+
+
+/* @keyframes drop animation */
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+
+
+/* font awesome icons */
+.fab {
+    background-color: rgb(12, 12, 12);
+    border: 1px solid rgb(19, 17, 17);
+    font-size: 30px;
+    border-radius: 50%;   
+    opacity: 0.5;
+    border: none;
+}
+
+/* icons on hover effects */
+
+.fa-github:hover{
+    color:rgb(166, 184, 10);
+}
+.fa-facebook:hover{
+    color: blue;
+    
+}
+.fa-instagram:hover{
+    background-color: rgb(197, 11, 141);
+    color: white;
+}
+.fa-linkedin:hover{
+    color: 	rgb(0, 64, 255);
+    background: black;
+}
+.fa-twitter:hover{
+    color: 	rgb(13, 105, 211);
+    background: black;
+}
+.fa-youtube:hover{
+    color: red;
+    background: black;
+}
+
+
+
+/*--------------------- start of my Sample Projects Section ------------------*/
+.sectionTitle{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------- Sample Projects Section 2 -----------------*/
+#section--2{
+     display: flex;
+     align-items: center;
+     text-align: center;
+     position: relative;
+     
+}
+
+
+.appTitle{
+    color: orange;
+    margin-bottom: 10px;
+}
+
+#appPara{
+    color: aliceblue;
+    text-align: center;
+}
+
+/*------------------------ Project slide show containers ------------------*/
+
+.projects--slideContainer{
+    background-color: var(--myAnotherColor);
+}
+/* picture projects */
+.mySlides{
+    display: none;
+}
+/* arrows */
+
+.arrowParent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: -300px;
+    width: 100%;
+    
+}
+
+.arrow{
+    background-color: #30283d;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: 0.5;
+    border: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;    
+    cursor: pointer;
+    
+}
+.leftArrow{
+    border-radius: 20px 0 0 20px;
+    margin-left: 10px;
+}
+.rightArrow{
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px;
+}
+.leftArrow::after{
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 9%;
+  margin-left: 1px!important;
+  margin-top: 0%;
+  border-radius: 20px 0 0 20px;
+  opacity: 0;
+  transition: all 1s;
+}
+.leftArrow:active::after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;    
+    transition: 0s;
+}
+
+.rightArrow::after{
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 9%;
+    margin-right: 1px!important;
+    margin-top: 0%;
+    border-radius: 0 20px 20px 0;
+    opacity: 0;
+    transition: all 1s;
+}
+.rightArrow:active::after{
+   padding: 0;
+   margin: 0;
+   opacity: 1;
+   transition: 0s; 
+}
+    
+
+/*------------------------- Skills -------------------*/
+#section--3{
+    background-color: var(--myAnotherColor);
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center ;    
+    flex-wrap: nowrap;
+    font-size: .9rem;   
+    
+}
+
+.gallery-container > div{    
+    margin-bottom: 1rem;    
+    padding: 20px 5px;
+    min-width: none;
+    margin: 8px;
+    color: aliceblue;
+    line-height: 1.2em;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    text-align: left;
+    padding: 10px;
+}
+
+.school{
+    color: yellow;
+    font-size: .8rem;
+}
+
+.workPlace{
+    color: yellow;
+    font-size: .8rem;
+}
+
+.cardOne, .cardTwo, .cardThree, .cardFour {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/*--------------------------- Contact Me / Footer Section ---------------------------*/
+#section--4{
+    background-image:url(/image/spiderman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+    height: 100vh;
+    
+}
+.footerHead{
+    height: 150px;    
+    background: black;
+    opacity: .9;
+}
+/*---------------- Browser Animation -------------*/
+
+.footerDiv{    
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+.footerDiv > div{
+    background-color: black;
+    height: 400px;
+    opacity: .5;
+    padding: 5px 10px;
+}
+/*-----------Footer Left side------------*/
+.footerLeft{
+display: flex;
+width: 100%;
+border: 5px solid black;
+    
+}
+#webLogo{
+height: 50%;
+margin-top: 20px;
+
+}
+#webLogo:hover{
+transform: rotate(360deg);
+transition: 4s;
+}
+#webLogo:after:hover{
+    transform: rotate(60deg);
+    transition: 3s;
+}
+
+
+
+.footerOne{    
+    padding: 10px 40px;
+    margin: 10px;
+    width: 100%;
+}
+/*-------------footer browser neon-----------*/
+.footerTwo{
+    background: black;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+}
+.footerNav h3{
+    animation: joey 1s ease infinite;
+}
+
+@keyframes joey {
+   0%,
+   100% {
+       text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+       color: #f5efcb;  
+  }
+   50% {
+       text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+       color: #eda0d3;
+    }
+
+
+}
+
+.footerThree{
+    color: white;
+
+}
+.footerFour{
+    border: 1px solid rgb(49, 14, 114);
+    height: 50%;
+    color: white;
+
+}
+
+
+/*----------nav footer links----------*/
+
+.nav__footer__links{
+    list-style: none;
+    display: block;
+        
+     
+}
+.nav__footer__link{
+    padding: 10px 0px;
+}
+.footer__link{
+    text-decoration: none;
+    color: yellow;
+
+}
+.footer__link:hover{
+    font-weight: bolder;
+    color: blue;
+}
+
+/*-----------Footer Left side------------*/
+.footerRight{
+    width: 100%;
+    background: blue;
+    border: 5px solid black;
+}
+
+/*-----------Footer Bottom---------*/
+.footerBottom{
+    color: white;    
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    font-size: 1rem;     
+}
+
+.table, th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
